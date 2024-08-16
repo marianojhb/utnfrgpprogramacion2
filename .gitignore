@@ -1,0 +1,12 @@
+# specific to CodeBlocks IDE
+*.layout
+*.depend
+# generated directories
+bin/
+obj/
+
+# other files
+*.exe
+*.o
+Depurador/
+SoloLearn/
