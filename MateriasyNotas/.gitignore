@@ -5,3 +5,6 @@
 bin/
 obj/
 
+# other files
+*.o
+*.exe
