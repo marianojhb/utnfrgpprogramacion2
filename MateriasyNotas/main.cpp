@@ -19,6 +19,12 @@ int main()
     int contadorModalidades[4]{}; // vector de 4 posiciones para contabilizar cada modalidad
     int mayorModalidad = -1; // variable que guarda la modalidad mayor
 
+    // Punto 3
+    /**
+    * Estadísticas por llamado: Para cada llamado, la modalidad de examen
+    * que más inscripciones haya registrado.
+    */
+
     for(int i=0; i<3; i++)
     {
         system("clear");
@@ -95,10 +101,6 @@ void cuentaModalidad(int*contadorModalidades, int &mayorModalidad, int modalidad
     default:
         return;
     }
-    cout << "Modalidad 1 = " <<  contadorModalidades[0] << endl;
-    cout << "Modalidad 2 = " <<  contadorModalidades[1] << endl;
-    cout << "Modalidad 3 = " <<  contadorModalidades[2] << endl;
-    cout << "Modalidad 4 = " <<  contadorModalidades[3] << endl;
 }
 
 
