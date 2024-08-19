@@ -10,3 +10,6 @@ obj/
 *.o
 Depurador/
 .idea/
+.DS_Store
+
+.gitignore

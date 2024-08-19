@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Guia_de_Ejercicios_7_Vectores",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Guia_de_Ejercicios_7_Vectores_ejercicio01::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Guia_de_Ejercicios_7_Vectores_ejercicio01-Debug-442f264db86df6f2493e.json",
+					"name" : "Guia_de_Ejercicios_7_Vectores_ejercicio01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Guia_de_Ejercicios_7_Vectores_ejercicio02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Guia_de_Ejercicios_7_Vectores_ejercicio02-Debug-b9e1bd1c6f13bef7b9c2.json",
+					"name" : "Guia_de_Ejercicios_7_Vectores_ejercicio02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Guia_de_Ejercicios_7_Vectores_ejercicio03::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Guia_de_Ejercicios_7_Vectores_ejercicio03-Debug-ed370d5509edf0319af7.json",
+					"name" : "Guia_de_Ejercicios_7_Vectores_ejercicio03",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/mabelo/CLionProjects/Guia de Ejercicios 7 Vectores/cmake-build-debug",
+		"source" : "/Users/mabelo/CLionProjects/Guia de Ejercicios 7 Vectores"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

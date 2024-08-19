@@ -8,3 +8,8 @@ obj/
 # other files
 *.o
 *.exe
+
+#CLion
+CMakeLists.txt
+cmake-build-debug/
+.gitignore
