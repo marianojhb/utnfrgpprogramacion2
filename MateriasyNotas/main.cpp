@@ -10,7 +10,7 @@ int main()
 {
     // DEFINICION DE VARIABLES
 
-    const int cantidadMaterias = 3; // Total de materias existentes
+    const int cantidadMaterias = 10; // Total de materias existentes
 
     int ingresoMateria; // Captura el codigo de materia ingresado por teclado
     int ingresoCantidadInscripciones=0; // Captura el total de inscripciones de la materia en cuestión
@@ -30,7 +30,7 @@ int main()
 
     // PUNTO 4
     int materiasLegajosRepetidos[cantidadMaterias]{}; // Vector que guarda por cada materia, cantidad de legajos repetidos
-    int materias_codigos[cantidadMaterias];
+    int materias_codigos[cantidadMaterias]={}; // Vector que guarda los ID de cada materia
 
     // OUTPUT
 
