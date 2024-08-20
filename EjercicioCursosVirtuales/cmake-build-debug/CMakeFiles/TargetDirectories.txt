@@ -1,7 +1,0 @@
-/Users/mabelo/CLionProjects/utnfrgpprogramacion2/EjercicioCursosVirtuales/cmake-build-debug/CMakeFiles/EjercicioCursosVirtuales_main1.dir
-/Users/mabelo/CLionProjects/utnfrgpprogramacion2/EjercicioCursosVirtuales/cmake-build-debug/CMakeFiles/EjercicioCursosVirtuales_main2.dir
-/Users/mabelo/CLionProjects/utnfrgpprogramacion2/EjercicioCursosVirtuales/cmake-build-debug/CMakeFiles/EjercicioCursosVirtuales_main3.dir
-/Users/mabelo/CLionProjects/utnfrgpprogramacion2/EjercicioCursosVirtuales/cmake-build-debug/CMakeFiles/EjercicioCursosVirtuales_main4.dir
-/Users/mabelo/CLionProjects/utnfrgpprogramacion2/EjercicioCursosVirtuales/cmake-build-debug/CMakeFiles/EjercicioCursosVirtuales_ordena1.dir
-/Users/mabelo/CLionProjects/utnfrgpprogramacion2/EjercicioCursosVirtuales/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/mabelo/CLionProjects/utnfrgpprogramacion2/EjercicioCursosVirtuales/cmake-build-debug/CMakeFiles/rebuild_cache.dir
