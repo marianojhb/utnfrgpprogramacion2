@@ -1,0 +1,6 @@
+# ninja log v5
+1	705	1724121334808720586	CMakeFiles/Ejercicio1.dir/main.cpp.o	b58d7581d1384a37
+0	47	1724121412145495122	build.ninja	485d323927bd997a
+7	311	1724121412460547824	CMakeFiles/Ejercicio1.dir/funciones.cpp.o	36ac8a2617fc38c6
+6	312	1724121412461642208	CMakeFiles/Ejercicio1.dir/libreria_propia.cpp.o	7f38be0b613d1d6
+312	351	1724121412501012238	Ejercicio1	7f173053d9924b1f
