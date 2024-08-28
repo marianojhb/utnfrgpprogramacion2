@@ -33,6 +33,11 @@ int main() {
 int* cargarVectoryProcesar(int *vec, int tam, int &tam_din){
 
     int * ptr = new int[1];
+    if(ptr==nullptr)
+    {
+        cout << "NO SE PUDO ASIGNAR MEMORIA" << endl;
+        exit(0);
+    }
     int contador_pares = 0;
 
     for (int i = 0; i < tam; ++i) {
