@@ -44,7 +44,6 @@ int main()
 // CONSTRUCTOR
 Rectangulo::Rectangulo(float b, float a)
     : _base(b), _altura(a) {}
-
 // SETTERS
 void Rectangulo::setBase(float base)
 {
