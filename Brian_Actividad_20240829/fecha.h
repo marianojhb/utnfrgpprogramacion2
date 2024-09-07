@@ -27,4 +27,5 @@ private:
     bool esBisiesto(int anio);
     void agregarDia();
     void restarDia();
+    friend void funcionAmiga(Fecha &obj);
 };
