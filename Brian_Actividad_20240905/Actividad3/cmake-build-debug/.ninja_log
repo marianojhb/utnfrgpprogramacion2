@@ -1,0 +1,9 @@
+# ninja log v5
+0	137	1725634997952765125	build.ninja	38125e8c0ba3ef60
+2	2599	1725634997211024794	CMakeFiles/Actividad3.dir/TaladroPercutor.cpp.o	6a45de7921beb2c6
+1	2598	1725634997216049553	CMakeFiles/Actividad3.dir/Herramienta.cpp.o	f25be8db3c92aee9
+1	2595	1725634997210992210	CMakeFiles/Actividad3.dir/Martillo.cpp.o	d54e7e02fa1400ee
+0	2597	1725634997214075158	CMakeFiles/Actividad3.dir/main.cpp.o	4ed638480636c286
+1	2598	1725634997211024669	CMakeFiles/Actividad3.dir/Destornillador.cpp.o	24a24a0fca4e3e11
+2	2599	1725634997215173127	CMakeFiles/Actividad3.dir/Taladro.cpp.o	b6eef5e9286f5a81
+2599	2853	1725634997485146356	Actividad3	61141390728d3c79

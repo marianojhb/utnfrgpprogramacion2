@@ -1,0 +1,4 @@
+/usr/local/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/mabelo/CLionProjects/utnfrgpprogramacion2/Brian_Actividad_20240905/Actividad1 -B /Users/mabelo/CLionProjects/utnfrgpprogramacion2/Brian_Actividad_20240905/Actividad1/cmake-build-debug
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/mabelo/CLionProjects/utnfrgpprogramacion2/Brian_Actividad_20240905/Actividad1/cmake-build-debug

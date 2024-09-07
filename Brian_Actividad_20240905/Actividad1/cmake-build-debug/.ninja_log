@@ -1,0 +1,12 @@
+# ninja log v5
+1	2263	1725631485337599332	CMakeFiles/Actividad1.dir/Martillo.cpp.o	d22e6940bce7743a
+0	2266	1725631485342695175	CMakeFiles/Actividad1.dir/main.cpp.o	684c0fbdb7a45ca5
+2	2271	1725631485348048971	CMakeFiles/Actividad1.dir/Taladro.cpp.o	92e746dcaf4aa6ef
+2	2272	1725631485349564937	CMakeFiles/Actividad1.dir/Destornillador.cpp.o	6565e3a73f0fdd1d
+1	2273	1725631485350197089	CMakeFiles/Actividad1.dir/Herramienta.cpp.o	4191c681e3b2d521
+6	1923	1725632006212188982	CMakeFiles/Actividad1.dir/Destornillador.cpp.o	6565e3a73f0fdd1d
+1923	2113	1725632006411300069	Actividad1	bd084728d5da0517
+6	1637	1725632143327784048	CMakeFiles/Actividad1.dir/Destornillador.cpp.o	6565e3a73f0fdd1d
+1637	1825	1725632143529468535	Actividad1	bd084728d5da0517
+7	1586	1725632167728728730	CMakeFiles/Actividad1.dir/Destornillador.cpp.o	6565e3a73f0fdd1d
+1586	1780	1725632167928507344	Actividad1	bd084728d5da0517

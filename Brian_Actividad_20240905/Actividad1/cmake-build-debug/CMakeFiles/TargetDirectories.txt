@@ -1,0 +1,3 @@
+/Users/mabelo/CLionProjects/utnfrgpprogramacion2/Brian_Actividad_20240905/Actividad1/cmake-build-debug/CMakeFiles/Actividad1.dir
+/Users/mabelo/CLionProjects/utnfrgpprogramacion2/Brian_Actividad_20240905/Actividad1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mabelo/CLionProjects/utnfrgpprogramacion2/Brian_Actividad_20240905/Actividad1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
