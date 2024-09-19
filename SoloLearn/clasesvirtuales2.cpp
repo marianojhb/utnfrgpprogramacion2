@@ -6,6 +6,7 @@ class Enemy
 protected:
 public:
     int attackPower;
+    virtual void attack(){}
     virtual void setAttackPower(int a)
     {
         attackPower = a;
@@ -18,7 +19,7 @@ class Ninja: public Enemy
 public:
     void attack()
     {
-        cout << "Ninja! - "<<attackPower<<endl;
+        cout << "Ninja! - "<<this->attackPower<<endl;
     }
     void setAttackPower(int a)
     {
@@ -31,7 +32,7 @@ class Monster: public Enemy
 public:
     void attack()
     {
-        cout << "Monster! - "<<attackPower<<endl;
+        cout << "Monster! - "<< this->attackPower<<endl;
     }
     void setAttactPower(int &a)
     {
@@ -49,6 +50,6 @@ int main()
     e1->setAttackPower(20);
     e2->setAttackPower(80);
 
-    n.attack();
-    m.attack();
+    e1->attack();
+    e2->attack();
 }

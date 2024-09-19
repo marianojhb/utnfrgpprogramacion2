@@ -15,7 +15,7 @@ public:
 class Ninja: public Enemy
 {
 public:
-    void attack()
+    void attack() const
     {
         cout << "Ninja! - "<<attackPower<<endl;
     }
@@ -24,9 +24,9 @@ public:
 class Monster: public Enemy
 {
 public:
-    void attack()
+    void attack() const
     {
-        cout << "Monster! - "<<attackPower<<endl;
+        cout << "Monster! - "<<attackPower * 10<<endl;
     }
 };
 
@@ -38,7 +38,7 @@ int main()
     Enemy *e2 = &m;
 
     e1->setAttackPower(20);
-    e2->setAttackPower(80);
+    e2->setAttackPower(20);
 
     n.attack();
     m.attack();
