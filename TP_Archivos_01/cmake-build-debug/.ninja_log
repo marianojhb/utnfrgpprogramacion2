@@ -1,0 +1,8 @@
+# ninja log v5
+0	162	1726715418153804123	build.ninja	4e11c04c83f1f079
+1	1848	1726699160049554609	CMakeFiles/TP_Archivos_01.dir/Fecha.cpp.o	f36a7cdd25c34cdc
+1	1860	1726699160061857290	CMakeFiles/TP_Archivos_01.dir/Menu.cpp.o	96b15935d824ad25
+6	1407	1726714595501078188	CMakeFiles/TP_Archivos_01.dir/main.cpp.o	ec04ae1b97579ca4
+1803	1991	1726714768583026688	TP_Archivos_01	262ab46be2679e9b
+7	1803	1726714768388492343	CMakeFiles/TP_Archivos_01.dir/ArchivoAlumno.cpp.o	f1c538957edbe7b0
+16	1688	1726713440867279462	CMakeFiles/TP_Archivos_01.dir/Alumno.cpp.o	bd789c89f1c50459
