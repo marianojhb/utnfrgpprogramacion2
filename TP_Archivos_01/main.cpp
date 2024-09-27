@@ -1,14 +1,9 @@
 #include <iostream>
 #include "Alumno.h"
 #include "ArchivoAlumno.h"
+#include "Mariano.h"
 
 using namespace std;
-
-// FUNCION QUE PERMITE QUE POR CADA ITERACION SE PUEDA VOLVER A CARGR UN ALUMNO Y NO QUEDEN CARACTERES EN EL BUFFER
-void limpiarBuffer() {
-    std::cin.clear(); // Limpiar el estado del flujo
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignorar caracteres restantes
-}
 
 int main()
 {
@@ -17,13 +12,32 @@ int main()
 ///Usar los .h y .cpp según corresponda.
 
 
+//    FILE * _p2;
+//    Alumno reg11;
+//    _p2 = fopen("alumnos.dat", "rb");
+//
+//    cout << fread(&reg11, sizeof(Alumno),1,_p2) << endl;
+//    reg11.mostrar();
+//    pausar();
+//
+//    cout << fread(&reg11, sizeof(Alumno),1,_p2) << endl;
+//    reg11.mostrar();
+//    pausar();
+//
+//    cout << fread(&reg11, sizeof(Alumno),1,_p2) << endl;
+//    reg11.mostrar();
+//    pausar();
+
     int opcion;
     do
     {
+        limpiar();
         puts("-------------------");
         puts("Menu de opciones:");
-        puts("1. Cargar alumno");
-        puts("2. Mostrar alumnos");
+        puts("1. Agregar alumno");
+        puts("2. Mostrar listado de alumnos");
+        puts("3. Mostrar legajo");
+        puts("4. Menu reportes");
         puts("0. Exit");
         puts("-------------------");
         std::cout << "INGRESE LA OPCION: ";
@@ -35,20 +49,55 @@ int main()
         {
             case 1:
                 registro.cargar();
-                registro.mostrar();
-                if(archivo.grabarRegistroAlumno(registro))
-                {
-                    std::cout << "DATOS GUARDADOS CORRECTAMENTE..." << std::endl;
-                }
+                archivo.grabarRegistroAlumno(registro);
                 break;
             case 2:
-                if(archivo.leerRegistrosAlumnos())
+                archivo.leerRegistrosAlumnos();
+                break;
+            case 3:
                 {
-                    std::cout << "DATOS LEIDOS CORRECTAMENTE" << std::endl;
+                    Alumno reg;
+                    int input_legajo;
+                    limpiar();
+                    cout << "INGRESE LEGAJO ";
+                    cin >> input_legajo;
+                    reg = archivo.buscaLegajo(input_legajo);
+                    if (reg.getLegajo()!=0)
+                    {
+                        limpiar();
+                        reg.mostrar();
+                    } else
+                    {
+                        cerr << "No se encontro el legajo" << endl;
+                    }
+                    pausar();
                 }
                 break;
+            case 4:
+            {
+                do {
+                    limpiar();
+                    puts("-------------------");
+                    puts("Menu de reportes:");
+                    puts("1. Listar alumnos por anio de nacimiento");
+                    puts("2. Carrera con mas cantidad de alumnos (1-8)");
+                    puts("3. Carrera con menos cantidad de alumnos");
+                    puts("4. Listado alfabetico de alumnos");
+                    puts("5. Generar ordenados.dat con el listado alfabetico");
+                    puts("0. Volver al menu anterior");
+                    puts("-------------------");
+                    std::cout << "INGRESE LA OPCION: ";
+                    std::cin >> opcion;
+                    std::cin.ignore();
+                    switch(opcion)
+                    {
+                        case 0:
+                            break;
+                    }
+                } while (opcion!=0);
+                opcion = 1;
+            }
         }
-//    limpiarBuffer(); // LIMPIA CIN PARA LA PROXIMA ITERACION
     }
     while(opcion!=0);
 

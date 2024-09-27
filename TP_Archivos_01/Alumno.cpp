@@ -8,7 +8,7 @@ Alumno::Alumno()
     _legajo = 0;
     strcpy(_nombre,"");
     strcpy(_apellido,"");
-    _fechaNacimiento={1,1,1};
+    _fechaNacimiento={0,0,0};
     strcpy(_email,"");
     _codigoCarrera = 0;
 }
@@ -37,7 +37,7 @@ void Alumno::mostrar()
     std::cout << _nombre << std::endl;
     std::cout << "APELLIDO ";
     std::cout << _apellido << std::endl;
-    std::cout << "FECHA DE NACIMIENTO " << std::endl;
+    std::cout << "FECHA DE NACIMIENTO ";
     _fechaNacimiento.mostrar();
     std::cout << "EMAIL ";
     std::cout << _email << std::endl;
@@ -45,37 +45,53 @@ void Alumno::mostrar()
     std::cout << _codigoCarrera << std::endl;
 }
 
-
-void grabarRegistroAlumno(Alumno reg)
+int Alumno::getLegajo()
 {
-    FILE *pAlumno;
-    pAlumno = fopen("alumnos.dat", "ab");//si no puede hacer la apertura fopen devuelve NULL
-    ///modo de apertura     wb (write)-> Escritura. siempre crea un archivo nuevo
-    ///rb (read) -> solo lectura. El archivo tiene que existir
-    ///ab (append)-> Para agregar registros. Si no existe el archivo lo crea
-    if (pAlumno == NULL) exit(0);
-    fwrite(&reg, sizeof(Alumno), 1, pAlumno);
-    fclose(pAlumno);
+    return _legajo;
+}
+std::string Alumno::getNombre()
+{
+    return _nombre;
+}
+std::string Alumno::getApellido()
+{
+    return _apellido;
+}
+Fecha Alumno::getFechaNacimiento()
+{
+    return _fechaNacimiento;
+}
+std::string Alumno::getEmail()
+{
+    return _email;
+}
+int Alumno::getCodigoCarrera()
+{
+    return _codigoCarrera;
 }
 
-void leerRegistroAlumno(Alumno &reg)
+void Alumno::setLegajo(int legajo)
 {
-    FILE *pAlumno;
-    pAlumno = fopen("alumnos.dat", "rb");//si no puede hacer la apertura fopen devuelve NULL
-    if (pAlumno == NULL) {exit(0);}
-    fread(&reg, sizeof(Alumno), 1, pAlumno);
-    reg.mostrar();
-    fclose(pAlumno);
+    _legajo = legajo;
+}
+void Alumno::setNombre(std::string nombre)
+{
+    strcpy(_nombre,nombre.c_str());
+}
+void Alumno::setApellido(std::string apellido)
+{
+    strcpy(_apellido,apellido.c_str());
+}
+void Alumno::setFechaNacimiento(Fecha fechaDeNacimiento)
+{
+    _fechaNacimiento = fechaDeNacimiento;
+}
+void Alumno::setEmail(std::string email)
+{
+    strcpy(_email,email.c_str());
+}
+void Alumno::setCodigoCarrera(int codigoCarrera)
+{
+    _codigoCarrera = codigoCarrera;
 }
 
-void leerRegistroAlumno2()
-{
-    Alumno reg;
-    FILE *pAlumno;
-    pAlumno = fopen("alumnos.dat", "rb");//si no puede hacer la apertura fopen devuelve NULL
-    if (pAlumno == NULL) exit(0);
-    while (fread(&reg, sizeof(Alumno), 1, pAlumno) == 1) {
-        reg.mostrar();
-    }
-    fclose(pAlumno);
-}
