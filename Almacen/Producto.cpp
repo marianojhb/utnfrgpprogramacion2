@@ -1,13 +1,23 @@
 #include "Producto.h"
+#include <iostream>
 
-Producto::Producto(){
+Producto::Producto()
+{
+    _codigo = 0;
+    _stockMinimo = 0;
+    _stockActual = 0;
+    _precio = 0;
+    _nombre = "";
+    _estado = true;
+}
 
-}Producto::Producto(int codigo, int stockMinimo, int stockActual, float precio, std::string nombre){
+Producto::Producto(int codigo, int stockMinimo, int stockActual, float precio, std::string nombre, bool estado){
     _codigo = codigo;
     _stockMinimo = stockMinimo;
     _stockActual = stockActual;
     _precio = precio;
     _nombre = nombre;
+    _estado = true;
 }
 int Producto::getCodigo() const {
     return _codigo;
@@ -24,6 +34,9 @@ float Producto::getPrecio() const{
 std::string Producto::getNombre() const{
     return _nombre;
 }
+bool Producto::getEstado() const{
+    return _estado;
+}
 void Producto::setCodigo(int codigo){
     _codigo = codigo;
 }
@@ -38,4 +51,15 @@ void Producto::setPrecio(float precio){
 }
 void Producto::setNombre(std::string nombre){
     _nombre = nombre;
+}
+void Producto::setEstado(bool estado){
+    _estado = estado;
+}
+
+bool Producto::operator==(Producto &otro)
+{
+    bool res =  this->_codigo == otro._codigo;
+    int num1= this->_codigo ;
+    int num2= _codigo ;
+    return this->_codigo == otro._codigo;
 }
