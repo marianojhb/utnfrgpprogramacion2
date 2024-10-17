@@ -1,0 +1,3 @@
+/Users/mabelo/CLionProjects/utnfrgpprogramacion2/Guia de Ejercicios de Memoria Dinamica/Ejercicio2/cmake-build-debug/CMakeFiles/Ejercicio2.dir
+/Users/mabelo/CLionProjects/utnfrgpprogramacion2/Guia de Ejercicios de Memoria Dinamica/Ejercicio2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mabelo/CLionProjects/utnfrgpprogramacion2/Guia de Ejercicios de Memoria Dinamica/Ejercicio2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

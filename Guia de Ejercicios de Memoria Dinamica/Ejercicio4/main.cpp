@@ -13,12 +13,12 @@ int main()
     int num;
     int contador = 0;
     int * vec;
-    vec = new int[1]();
-    if (vec ==NULL)
+    if (vec == nullptr)
     {
         cout << "ERROR DE ASIGNACION DE MEMORIA";
         exit(0);
     }
+    vec = new int[1]();
     cout << "INGRESE NUM ";
     cin >> num;
     while(num>0)

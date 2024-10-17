@@ -80,7 +80,7 @@ bool ProductosArchivo::editar(int pos, Producto &p)
     }
     fseek(pFile, pos * sizeof(Producto), SEEK_SET);
 
-    result = fwrite(&p, pos * sizeof(Producto),1,pFile);
+    result = fwrite(&p, sizeof(Producto),1,pFile);
     fclose(pFile);
 
     return result;

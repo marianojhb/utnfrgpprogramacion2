@@ -11,6 +11,7 @@ void mostrarProducto(Producto);
 void mostrarProductos();
 void editarProducto();
 void eliminarProducto();
+void buscarProducto();
 
 int main()
 {
@@ -25,6 +26,7 @@ int main()
         cout << "2. Agregar productos" << endl;
         cout << "3. Modificar producto" << endl;
         cout << "4. Eliminar producto" << endl;
+        cout << "5. Buscar producto" << endl;
         cout << "0. Salir" << endl;
         cout << "---------------------" << endl;
         cout << "Elija la opcion: ";
@@ -47,6 +49,9 @@ int main()
             case 4:
                 eliminarProducto();
                 break;
+            case 5:
+                buscarProducto();
+                break;
             case 0:
                 exit(0);
         }
@@ -54,15 +59,51 @@ int main()
     return 0;
 }
 
+//void guardarProducto(Producto &producto)
+//{
+//    ProductosArchivo pa;
+//    int cantidad;
+//    cantidad = pa.getCantidad();
+//    bool result;
+//    result = pa.guardar(producto);
+//
+//    if (result)
+//    {
+//    cout << "Producto guardado con exito!" << endl;
+//    }
+//    else
+//    {
+//        std::cout << "El registro ya existe y no se puede agregar" << std::endl;
+//    }
+//}
+
 void guardarProducto(Producto &producto)
 {
     ProductosArchivo pa;
     Producto *registros;
     int cantidad;
+    int codProductoNuevo = producto.getCodigo();
     cantidad = pa.getCantidad();
-    bool result;
-    result = pa.guardar(producto);
+    bool result = false;
+    bool existe = false;
+    registros = new Producto[cantidad];
+    pa.leerTodos(registros,cantidad);
 
+    for (int i = 0; i < cantidad; ++i) {
+        cout <<  registros[i].getCodigo() << "==" << codProductoNuevo << "? " << endl;
+        pausar();
+
+        if ( registros[i].getCodigo() == codProductoNuevo)
+        {
+            cout << "Ya existe" << endl;
+            existe = true;
+            break;
+        }
+    }
+    if(!existe)
+    {
+        result = pa.guardar(producto);
+    }
     if (result)
     {
     cout << "Producto guardado con exito!" << endl;
@@ -72,7 +113,6 @@ void guardarProducto(Producto &producto)
         std::cout << "El registro ya existe y no se puede agregar" << std::endl;
     }
 }
-
 
 Producto cargarProducto()
 {
@@ -156,9 +196,10 @@ void editarProducto()
     cout << "Ingrese codigo del producto: " << endl;
     cin >> codProducto; // 1
     for (i = 0; i < cantidad; ++i) {
-        if (productos[i].getCodigo() == codProducto)
+        if (productos[i].getCodigo() == codProducto) // TODO: USAR LA FUNCION BUSCAR
         {
             p = cargarProducto();
+
             result = pa.editar(i, p);
             if(result)
             {
@@ -169,6 +210,7 @@ void editarProducto()
                 std::cout << "No se grabaron los cambios" << std::endl;
             }
         }
+        break;
     }
     delete []productos;
 }
@@ -195,7 +237,6 @@ void eliminarProducto()
     for (i = 0; i < cantidad; ++i) {
         if(productos[i].getCodigo()==codProducto)
         {
-            std::cout << "entro... "  << endl;
             pos=i;
         }
     }
@@ -210,4 +251,23 @@ void eliminarProducto()
         std::cerr << "No se elimino el registro" << std::endl;
     }
     delete[]productos;
+}
+
+void buscarProducto(){
+    ProductosArchivo pa;
+    Producto * productos;
+    if(productos == nullptr)
+    { cout << "Error de asignacion de memoria" << endl;}
+    int codProducto;
+    int cantidad = pa.getCantidad();
+    cout << "Ingrese el codigo de producto a buscar " << endl;
+    cin >> codProducto;
+    productos = new Producto[cantidad];
+    pa.leerTodos(productos,cantidad);
+    for (int i = 0; i < cantidad; ++i) {
+        if (productos[i].getCodigo() == codProducto) {
+            mostrarProducto(productos[i]);
+            break;
+        }
+    }
 }
